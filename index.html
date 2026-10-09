@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prison Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">P</div>
+          <div>
+            <div class="brand-name">Prison</div>
+            <div class="brand-sub">Dashboard</div>
+          </div>
+        </div>
+
+        <nav class="nav">
+          <div class="nav-item active">
+            <span class="nav-icon">◧</span>
+            Dashboard
+          </div>
+          <div class="nav-item"><span class="nav-icon">◫</span>Mahkumlar</div>
+          <div class="nav-item"><span class="nav-icon">▣</span>Jinoyatlar</div>
+          <div class="nav-item"><span class="nav-icon">▤</span>Muassasa holati</div>
+          <div class="nav-item"><span class="nav-icon">◉</span>Shaxsiy tarkib</div>
+          <div class="nav-item"><span class="nav-icon">◎</span>Ishlab chiqarish</div>
+          <div class="nav-item"><span class="nav-icon">◌</span>Call Markaz</div>
+          <div class="nav-item"><span class="nav-icon">⚙</span>Sozlamalar</div>
+        </nav>
+
+        <div class="sidebar-card">
+          <div class="mini-label">Yoqtirilgan</div>
+          <div class="mini-value">1,284</div>
+          <div class="mini-text">Umumiy mahkumlar soni</div>
+        </div>
+      </aside>
+
+      <main class="main-panel">
+        <header class="topbar">
+          <div>
+            <div class="eyebrow">Boshqaruv paneli</div>
+            <h1>Mahkumlar statistikasi</h1>
+          </div>
+
+          <div class="toolbar">
+            <div class="filter-chip">2026</div>
+            <div class="filter-chip">Barcha muassasalar</div>
+            <div class="filter-chip">Hududlar</div>
+            <div class="date-pill">09.10.2026</div>
+            <button class="export-btn">Eksport</button>
+          </div>
+        </header>
+
+        <section class="kpi-grid">
+          <article class="kpi-card accent-blue">
+            <div class="kpi-head">
+              <span class="kpi-label">Umumiy mahkumlar</span>
+              <span class="kpi-icon">↗</span>
+            </div>
+            <div class="kpi-value">1,284</div>
+            <div class="kpi-meta">
+              <span class="trend up">+3.4%</span>
+              <span>Oylik o’sish</span>
+            </div>
+          </article>
+
+          <article class="kpi-card accent-green">
+            <div class="kpi-head">
+              <span class="kpi-label">JIEK / MK / TH</span>
+              <span class="kpi-icon">◔</span>
+            </div>
+            <div class="mini-stack-row">
+              <div>
+                <div class="mini-number">420</div>
+                <small>JIEK</small>
+              </div>
+              <div>
+                <div class="mini-number">510</div>
+                <small>MK</small>
+              </div>
+              <div>
+                <div class="mini-number">354</div>
+                <small>TH</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="kpi-card accent-violet">
+            <div class="kpi-head">
+              <span class="kpi-label">Bandlik / bo'shlik</span>
+              <span class="kpi-icon">◎</span>
+            </div>
+            <div class="kpi-value">76%</div>
+            <div class="kpi-meta">
+              <span class="trend neutral">Band</span>
+              <span>24% bo'sh</span>
+            </div>
+          </article>
+
+          <article class="kpi-card accent-amber">
+            <div class="kpi-head">
+              <span class="kpi-label">Jins bo'yicha</span>
+              <span class="kpi-icon">◉</span>
+            </div>
+            <div class="kpi-inline-group">
+              <div>
+                <div class="mini-number">1,106</div>
+                <small>Erkak</small>
+              </div>
+              <div>
+                <div class="mini-number">178</div>
+                <small>Ayollar</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="kpi-card accent-red">
+            <div class="kpi-head">
+              <span class="kpi-label">Jazoni o’tayotganlar</span>
+              <span class="kpi-icon">▣</span>
+            </div>
+            <div class="kpi-value">1,264</div>
+            <div class="kpi-meta">
+              <span class="trend down">-1.2%</span>
+              <span>Oylik pasayish</span>
+            </div>
+          </article>
+
+          <article class="kpi-card accent-teal">
+            <div class="kpi-head">
+              <span class="kpi-label">Ozod etilayotganlar</span>
+              <span class="kpi-icon">◌</span>
+            </div>
+            <div class="kpi-value">214</div>
+            <div class="kpi-meta">
+              <span class="trend up">+8.6%</span>
+              <span>Keyingi oy</span>
+            </div>
+          </article>
+        </section>
+
+        <section class="content-grid">
+          <div class="left-stack">
+            <article class="panel chart-panel">
+              <div class="panel-head">
+                <h3>Sodir etilgan jinoyat turlari</h3>
+                <span class="panel-tag">Qisqacha</span>
+              </div>
+              <div class="bar-chart">
+                <div class="bar-col">
+                  <div class="bar" style="height: 62%"></div>
+                  <span>O’g’rilik</span>
+                </div>
+                <div class="bar-col">
+                  <div class="bar blue" style="height: 48%"></div>
+                  <span>Zoravonlik</span>
+                </div>
+                <div class="bar-col">
+                  <div class="bar teal" style="height: 36%"></div>
+                  <span>Narkotika</span>
+                </div>
+                <div class="bar-col">
+                  <div class="bar amber" style="height: 28%"></div>
+                  <span>Qaroqchilik</span>
+                </div>
+                <div class="bar-col">
+                  <div class="bar red" style="height: 18%"></div>
+                  <span>Boshqa</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="panel chart-panel">
+              <div class="panel-head">
+                <h3>Jazoni o’tash davrida sodir etilgan jinoyatlar</h3>
+                <span class="panel-tag">Trend</span>
+              </div>
+              <div class="line-chart">
+                <svg viewBox="0 0 420 170" preserveAspectRatio="none">
+                  <path d="M0,120 C45,110, 70,80, 110,86 S180,62, 210,72 S280,44, 320,52 S380,18, 420,30 L420,170 L0,170 Z" fill="rgba(37,99,235,0.12)"/>
+                  <path d="M0,120 C45,110, 70,80, 110,86 S180,62, 210,72 S280,44, 320,52 S380,18, 420,30" fill="none" stroke="#2563EB" stroke-width="3.6" stroke-linecap="round"/>
+                </svg>
+                <div class="chart-labels">
+                  <span>Yan</span>
+                  <span>Fev</span>
+                  <span>Mar</span>
+                  <span>Apr</span>
+                  <span>May</span>
+                  <span>Iyun</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="right-stack">
+            <article class="panel doughnut-panel">
+              <div class="panel-head">
+                <h3>Fuqarolik bo’yicha</h3>
+              </div>
+              <div class="donut-wrap">
+                <div class="donut-chart">
+                  <div class="donut-center">
+                    <strong>1,284</strong>
+                    <small>Jami</small>
+                  </div>
+                </div>
+                <ul class="legend-list">
+                  <li><span class="dot blue"></span> O’zbekiston <strong>1,118</strong></li>
+                  <li><span class="dot teal"></span> Chet ellik <strong>126</strong></li>
+                  <li><span class="dot amber"></span> Boshqa <strong>40</strong></li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="panel mini-panel">
+              <div class="panel-head">
+                <h3>Etap qilinayotganlar</h3>
+                <span class="panel-tag subtle">412</span>
+              </div>
+              <div class="progress-list">
+                <div class="progress-row">
+                  <label>1-bosqich</label>
+                  <div class="progress"><span style="width: 64%"></span></div>
+                  <strong>64%</strong>
+                </div>
+                <div class="progress-row">
+                  <label>2-bosqich</label>
+                  <div class="progress"><span style="width: 48%"></span></div>
+                  <strong>48%</strong>
+                </div>
+                <div class="progress-row">
+                  <label>3-bosqich</label>
+                  <div class="progress"><span style="width: 36%"></span></div>
+                  <strong>36%</strong>
+                </div>
+              </div>
+            </article>
+
+            <article class="panel mini-panel">
+              <div class="panel-head">
+                <h3>Shaxsiy tarkib holati</h3>
+                <span class="panel-tag green">Normal</span>
+              </div>
+              <div class="stat-rows">
+                <div><span>Voyaga yetmagan</span><strong>92</strong></div>
+                <div><span>Yoshlar</span><strong>310</strong></div>
+                <div><span>Erkak</span><strong>1,106</strong></div>
+                <div><span>Ayollar</span><strong>178</strong></div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="facility-block">
+          <div class="section-header-row">
+            <h3>Muassasalar vositalari holati</h3>
+            <span class="panel-tag">8 turlar</span>
+          </div>
+
+          <div class="facility-grid">
+            <article class="facility-card">
+              <div class="facility-icon blue">📷</div>
+              <div class="facility-title">Kamera</div>
+              <div class="facility-status ok">Normal</div>
+              <div class="facility-value">96%</div>
+            </article>
+
+            <article class="facility-card">
+              <div class="facility-icon teal">📹</div>
+              <div class="facility-title">Bodikamera</div>
+              <div class="facility-status warn">Tekshirilmoqda</div>
+              <div class="facility-value">78%</div>
+            </article>
+
+            <article class="facility-card">
+              <div class="facility-icon amber">🩺</div>
+              <div class="facility-title">Rentgen skaner</div>
+              <div class="facility-status ok">Normal</div>
+              <div class="facility-value">90%</div>
+            </article>
+
+            <article class="facility-card">
+              <div class="facility-icon red">🚨</div>
+              <div class="facility-title">Arkali detektor</div>
+              <div class="facility-status fail">Nosoz</div>
+              <div class="facility-value">52%</div>
+            </article>
+
+            <article class="facility-card">
+              <div class="facility-icon violet">🛡️</div>
+              <div class="facility-title">Qor’gon</div>
+              <div class="facility-status ok">Normal</div>
+              <div class="facility-value">88%</div>
+            </article>
+
+            <article class="facility-card">
+              <div class="facility-icon blue">💻</div>
+              <div class="facility-title">Video uchrashuv</div>
+              <div class="facility-status ok">Normal</div>
+              <div class="facility-value">94%</div>
+            </article>
+          </div>
+        </section>
+
+        <section class="table-section">
+          <div class="section-header-row">
+            <h3>Shaxsiy tarkib bo’yicha saf ro’yxati</h3>
+            <span class="panel-tag">Son: 48</span>
+          </div>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>T/r</th>
+                  <th>F.I.Sh</th>
+                  <th>Muassasa</th>
+                  <th>Bo’lim</th>
+                  <th>Holat</th>
+                  <th>Sana</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>01</td>
+                  <td>Abdullaev N.</td>
+                  <td>JIEK-1</td>
+                  <td>Qurilish</td>
+                  <td><span class="status-pill ok">Faol</span></td>
+                  <td>09.10.2026</td>
+                </tr>
+                <tr>
+                  <td>02</td>
+                  <td>Karimov S.</td>
+                  <td>MK-3</td>
+                  <td>Texnika</td>
+                  <td><span class="status-pill warn">Tekshirilmoqda</span></td>
+                  <td>08.10.2026</td>
+                </tr>
+                <tr>
+                  <td>03</td>
+                  <td>Rustamov A.</td>
+                  <td>TH-2</td>
+                  <td>Yadro</td>
+                  <td><span class="status-pill ok">Faol</span></td>
+                  <td>07.10.2026</td>
+                </tr>
+                <tr>
+                  <td>04</td>
+                  <td>Yuldashev M.</td>
+                  <td>JIEK-2</td>
+                  <td>Ta’lim</td>
+                  <td><span class="status-pill neutral">Kutilmoqda</span></td>
+                  <td>06.10.2026</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="bottom-grid">
+          <article class="bottom-card">
+            <div class="panel-head">
+              <h3>Kasalxonadagi mahkumlar</h3>
+              <span class="panel-tag">Hududiy</span>
+            </div>
+            <div class="big-number">48</div>
+            <div class="mini-trend"><span class="trend up">+2.1%</span> Bu oy</div>
+          </article>
+
+          <article class="bottom-card">
+            <div class="panel-head">
+              <h3>O’lim holatlari</h3>
+              <span class="panel-tag">18</span>
+            </div>
+            <div class="big-number">18</div>
+            <div class="mini-trend"><span class="trend down">-0.8%</span> Yugori</div>
+          </article>
+
+          <article class="bottom-card">
+            <div class="panel-head">
+              <h3>Tuzalish yo’liga o’tganlar</h3>
+              <span class="panel-tag">96</span>
+            </div>
+            <div class="big-number">96</div>
+            <div class="mini-trend"><span class="trend up">+4.7%</span> Oylik</div>
+          </article>
+
+          <article class="bottom-card">
+            <div class="panel-head">
+              <h3>Rag’batlantirilganlar</h3>
+              <span class="panel-tag">142</span>
+            </div>
+            <div class="big-number">142</div>
+            <div class="mini-trend"><span class="trend up">+6.3%</span> Qayd etilgan</div>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
